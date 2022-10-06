@@ -28,8 +28,8 @@ function Home() {
   return (
     <div>
       <h1>Weather App</h1>
-      <p>{weatherData.name}</p>
-      <p>{openWeatherURL}</p>
+      <h2>{weatherData.name}</h2>
+      <p>Humidity: {weatherData.main && weatherData.main.humidity}</p>
     </div>
   );
 }
