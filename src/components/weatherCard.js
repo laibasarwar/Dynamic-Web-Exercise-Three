@@ -1,17 +1,29 @@
 import React from "react";
 
-function WeatherCard({}) {
+function WeatherCard({
+  city,
+  cloudiness,
+  humidity,
+  highTemp,
+  lowTemp,
+  weatherType,
+  windSpeed,
+  currentTemp,
+}) {
   return (
     <div className="WeatherCard">
-      <h1>Weather App</h1>
-      <h2>{weatherData.name}</h2>
-      <p>Current Temperature: {temp}%</p>
-      <p>High Temperature: {hightemp}%</p>
-      <p>Low Temperature: {lowtemp}%</p>
-      <p>Cloudliness: {weatherData.clouds && weatherData.clouds.all}%</p>
-      <p>Humidity: {humidity}%</p>
-      <p>Wind Speed: {weatherData.wind && weatherData.wind.speed}%</p>
-      <p>Weather Type: {weatherData.weather[0].main}</p>
+      <h2>{city}</h2>
+      <div className="WeatherCard-One">
+        <p>Current Temp: {currentTemp}%</p>
+        <p>High Temp: {highTemp}%</p>
+        <p>Low Temp: {lowTemp}%</p>
+      </div>
+      <div className="WeatherCard-Two">
+        <p>Cloudliness: {cloudiness}%</p>
+        <p>Humidity: {humidity}%</p>
+        <p>Wind Speed: {windSpeed}%</p>
+        <p>Weather Type: {weatherType}</p>
+      </div>
     </div>
   );
 }

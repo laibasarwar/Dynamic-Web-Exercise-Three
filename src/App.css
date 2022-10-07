@@ -1,0 +1,68 @@
+html,
+body {
+  margin: 0 auto;
+  padding: 0;
+}
+
+h1 {
+  margin-left: 20px;
+  padding: 20px;
+  color: #6d75a8;
+}
+
+.WeatherCard {
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid black;
+  margin: 0px 40px 40px 40px;
+}
+
+.WeatherCard-One {
+  margin: 0 auto;
+  display: flex;
+}
+
+.WeatherCard-Two {
+  margin: 0 auto;
+  display: flex;
+}
+
+.WeatherCard h2 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 20px;
+  color: #6d75a8;
+}
+
+.WeatherCard p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 20px;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #b8c0f5;
+  padding: 0px 0px 0px 0px;
+}
+
+.header-content {
+  margin-right: 20px;
+}
+
+/* Style the header links */
+.header a {
+  float: right;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* Change the background color on mouse-over */
+.header a:hover {
+  background-color: white;
+  color: #6d75a8;
+}
