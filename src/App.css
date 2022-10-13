@@ -1,20 +1,45 @@
+.App {
+  font-size: 16px;
+  min-height: 100vh;
+}
+
 html,
 body {
   margin: 0 auto;
   padding: 0;
+  background-color: white;
 }
 
 h1 {
   margin-left: 20px;
   padding: 20px;
   color: #6d75a8;
+  text-align: center;
 }
 
+h4 {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-left: 40px;
+}
 .WeatherCard {
   margin: 0 auto;
   padding: 20px;
   border: 1px solid black;
-  margin: 0px 40px 40px 40px;
+  margin: 0px 400px 40px 400px;
+}
+
+.WeatherCard--weatherType svg {
+  height: auto;
+  width: 130px;
+  margin-left: 40px;
+}
+
+.Weather--wrapper {
+  margin: 0 auto;
+  max-width: 600px;
+  max-height: 200px;
+  padding: 25px;
+  min-height: 100vh;
 }
 
 .WeatherCard-One {
@@ -29,13 +54,13 @@ h1 {
 
 .WeatherCard h2 {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin-left: 20px;
-  color: #6d75a8;
+  margin-left: 40px;
+  font-size: 30px;
 }
 
 .WeatherCard p {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  padding: 20px;
+  padding: 20px 40px;
 }
 
 .header {

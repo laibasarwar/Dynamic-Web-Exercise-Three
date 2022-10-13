@@ -6,10 +6,10 @@ function Header() {
       <header>
         <div class="header">
           <div class="header-content">
-            <a href="/?city=Orlando">Orlando</a>
-            <a href="/?city=Seoul">Seoul</a>
+            <a href="/?city=Bogota">Bogota</a>
+            <a href="/?city=Madrid">Madrid</a>
             <a href="/?city=Tokyo">Tokyo</a>
-            <a href="/?city=Chicago">Chicago</a>
+            <a href="/?city=Seoul">Seoul</a>
           </div>
         </div>
       </header>

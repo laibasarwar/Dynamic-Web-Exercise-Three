@@ -59,18 +59,20 @@ function Home() {
 
   return (
     <div>
-      <Header />
-      <h1>Weather App</h1>
-      <WeatherCard
-        city={city}
-        cloudiness={cloudiness}
-        currentTemp={currentTemp}
-        highTemp={highTemp}
-        humidity={humidity}
-        lowTemp={lowTemp}
-        weatherType={weatherType}
-        windSpeed={windSpeed}
-      />
+      <div className="Weather-wrapper">
+        <Header />
+        <h1> Weather App</h1>
+        <WeatherCard
+          city={city}
+          cloudiness={cloudiness}
+          currentTemp={currentTemp}
+          highTemp={highTemp}
+          humidity={humidity}
+          lowTemp={lowTemp}
+          weatherType={weatherType}
+          windSpeed={windSpeed}
+        />
+      </div>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import WeatherIcon from "./WeatherIcon";
 
 function WeatherCard({
   city,
@@ -11,18 +12,24 @@ function WeatherCard({
   currentTemp,
 }) {
   return (
-    <div className="WeatherCard">
+    <div
+      className="WeatherCard"
+      style={{ backgroundColor: `rgba(0,0,255,${cloudiness / 100})` }}
+    >
       <h2>{city}</h2>
+      <div className="WeatherCard--weatherType">
+        <WeatherIcon weatherType={weatherType} />
+        <h4>{weatherType}</h4>
+      </div>
       <div className="WeatherCard-One">
-        <p>Current Temp: {currentTemp}%</p>
-        <p>High Temp: {highTemp}%</p>
-        <p>Low Temp: {lowTemp}%</p>
+        <p>Current: {currentTemp}%</p>
+        <p>High: {highTemp}%</p>
+        <p>Low: {lowTemp}%</p>
       </div>
       <div className="WeatherCard-Two">
         <p>Cloudliness: {cloudiness}%</p>
         <p>Humidity: {humidity}%</p>
         <p>Wind Speed: {windSpeed}%</p>
-        <p>Weather Type: {weatherType}</p>
       </div>
     </div>
   );
